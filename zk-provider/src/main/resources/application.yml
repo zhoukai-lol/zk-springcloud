@@ -1,0 +1,20 @@
+
+server:
+  port: 8090
+
+
+spring:
+  application:
+    name: zk-provider
+  datasource:
+    driver-class-name\uFF1Acom.mysql.cj.jdbc.Driver
+    url\uFF1Ajdbc:mysql://localhost:3306/zk?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username\uFF1Aroot
+    password\uFF1A123
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
